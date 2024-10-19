@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restu-Saputra</title>
+    <style>
+        :root {
+            --primary-color: #0099ff;
+            --secondary-color: #ff6f61;
+            --background-color: #f9f9f9;
+            --table-header-bg: #ed1717;
+            --table-header-text: #ffffff;
+            --table-row-hover: #f1f1f1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: var(--table-header-bg);
+            color: var(--table-header-text);
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover td {
+            background-color: var(--table-row-hover);
+        }
+
+        /* Style for navigation links */
+        p a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            font-size: 12px;
+            padding: 5px 10px;
+            border: 1px solid var(--primary-color);
+            border-radius: 25px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        p a:hover {
+            background-color: var(--primary-color);
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Daftar Harga Kendaraan per Hari</h1>
+    <table>
+        <tr>
+            <th rowspan="2">Hari</th>
+            <th colspan="2">Harga Kendaraan</th>
+        </tr>
+        <tr>
+            <th>Mobil</th>
+            <th>Motor</th>
+        </tr>
+        <tr>
+            <td>Senin</td>
+            <td>RP. 500.000.000</td>
+            <td>Rp. 8.000.000</td>
+        </tr>
+        <tr>
+            <td>Selasa</td>
+            <td>Rp. 510.000.000</td>
+            <td>Rp. 8.200.000</td>
+        </tr>
+        <tr>
+            <td>Rabu</td>
+            <td>Rp. 480.800.000</td>
+            <td>Rp. 10.000.000</td>
+        </tr>
+        <tr>
+            <td>Kamis</td>
+            <td>Rp. 250.000.000</td>
+            <td>Rp. 15.000.001</td>
+        </tr>
+        <tr>
+            <td>Jum'at</td>
+            <td>Rp. 350.000.000</td>
+            <td>Rp. 9.000.000</td>
+        </tr>
+        <tr>
+            <td>Sabtu</td>
+            <td>Rp. 0</td>
+            <td>Rp. 0</td>
+        </tr>
+    </table>
+
+    <p>
+        <a href="Restu-Saputra-Home.html">Home</a>
+        <a href="Restu-Saputra-list.html">Tugas List</a>
+        <a href="Restu-Saputra-table.html">Tugas Tabel</a>
+        <a href="Restu-Saputra-Login.html">Login</a>
+    </p>
+</body>
+</html>

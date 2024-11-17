@@ -1,93 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restu Saputra</title>
-    <style>
-        :root {
-            --primary-color: #0099ff;
-            --secondary-color: #f1f1f1;
-            --accent-color: #ff6f61;
-            --white: #ffffff;
-            --black: #333333;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-            color: var(--black);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 48px;
-            color: var(--white);
-            margin-bottom: 20px;
-        }
-
-        p a {
-            color: var(--white);
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 15px;
-            font-size: 18px;
-            padding: 10px 20px;
-            border: 2px solid var(--white);
-            border-radius: 25px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        p a:hover {
-            background-color: var(--white);
-            color: var(--primary-color);
-        }
-
-        hr {
-            width: 60%;
-            border: none;
-            height: 2px;
-            background-color: var(--white);
-            margin: 30px 0;
-        }
-
-        div {
-            font-size: 14px;
-            color: var(--white);
-            margin-top: 20px;
-        }
-
-        /* Footer style */
-        footer {
-            position: absolute;
-            bottom: 10px;
-            font-size: 12px;
-            color: var(--white);
-        }
-
-    </style>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../style/style.css">
 </head>
 <body>
-    <h1>Selamat Datang di Restu Saputra</h1>
-    <p>
-        <a href="index.html">Home</a>
-        <a href="Restu-Saputra-list.html">Tugas List</a>
-        <a href="Restu-Saputra-table.html">Tugas Tabel</a>
-        <a href="Restu-Saputra-Login.html">Login</a>
-    </p>
-    <hr>
-    <div>Ini adalah halaman home!!</div>
-    <footer>&copy; 2024 By: Restu Saputra</footer>
-</body>
-</html>
+<div class="header">
+<h1>Belajar Layout & Navbar</h1>
+</div>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="2024806051_RESTU-SAPUTRA.html">About us</a></li>
+<li class="drop">
+ <a href="#" class="dropbtn">Dropdown</a>
+ <div class="drop-content">
+<a href="Restu-Saputra-table.html">Tabel</a>
+<a href="Restu-Saputra-Login.html">Login</a>
+<a href="#">Kosong</a>
+</div>
+</li>
+</ul>
+<div class="row">
+<div class="column side">
+<h2>Data Diri</h2>
+<p>Nama saya Restu Saputra, Saya berasal dari Lampung barat, usia 25 Tahun</p>
+</div>
+<div class="column middle">
+<h2>Pendidikan</h2>
+<p>Saya memulai penddidikan di Sdn 3 sukaraja  lampung barat, Kemudian lanjut ke Mts Al_ikhlas fajar bulan lampung barat, Setelah saya melanjutkan ke sekolah kejuruan SMKN 1 Way Tenong .</p>
+    <p>dan Sekarang saya melanjukan pendidikan saya di Universitas Insan Pembangunan Indonesi, Prodi Teknologi Infoermasi.</p>
+    </div>
+    <div class="column side">
+    <h2>Hoby</h2>
+    <p>Saya memiliki banyak hoby yang saya lakukan di waktu luang, seperti, Bermain futsal, Mancing, Bermain games, dan masih banyak lagi</p>
+    </div> 
+    <footer class="my-footer">&copy; 2024 By: Restu Saputra</footer>
+    </body>
+    </html>

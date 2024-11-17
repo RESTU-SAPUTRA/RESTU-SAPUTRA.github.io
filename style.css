@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    }
+    body {
+    margin: 0;
+    }
+    /* Style the header */
+    .header {
+    background-color: #0eedc8;
+    padding: 20px;
+    text-align: center;
+    }
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: blue;
+    }
+    li{
+        float: left;
+    }
+    li a, .droptbn{
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li a:hover, .drop:hover .droptbn{
+        background-color:aqua;
+    }
+    li.drop{
+        display: inline-block;
+    }
+    .drop-content{
+        display: none;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    .drop-content a{
+        color: rgb(0, 0, 0);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .drop-content a:hover{
+        background-color: aqua;
+    }
+    .drop:hover .drop-content{
+        display: block;
+    }
+    /* Create three unequal columns that floats next to each other */
+    .column {
+    float: left;
+    padding: 10px;
+    }
+    /* colum data diri dan hoby*/
+    .column.side {
+    width: 30%;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 2px;
+    background-color:  #e0f7fa;
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-right: 5px solid rgb(239, 232, 232);
+    border-left: 5px solid rgb(239, 232, 232);
+    }
+    .column.side:hover{
+        transform: scale(1.02);
+    transition: transform 0.2s;
+    }
+    .column.middle {
+    width: 40%;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 2px;
+    background-color:  #e0f7fa;
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .column.middle:hover{
+        transform: scale(1.02);
+    transition: transform 0.2s;
+
+    }
+    h2{
+        text-align: center;
+    }
+    
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+    width: 100%;
+    }
+    }
+
+    .my-footer {
+        text-align: center;
+        margin-top: 15px;
+        position: relative;
+        clear: both;
+        background-color: transparent; 
+        padding: 10px; 
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    
